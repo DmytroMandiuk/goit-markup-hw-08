@@ -99,6 +99,7 @@ body {
   line-height: 1.87em;
   letter-spacing: 0.06em;
   cursor: pointer;
+  font-family: inherit;
 }
 /******* Стилізація особливості *******/
 .list-title {
@@ -170,6 +171,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  font-family: inherit;
 }
 .nav-btn:hover,
 .nav-btn:focus {
