@@ -58,9 +58,12 @@ body {
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
+.link-active{
+  color: var(--color-accent);
+}
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--color-accent);
 }
 /* Стилізація ссилок комунікації + футер  */
 .link-info {
@@ -73,7 +76,7 @@ body {
 }
 .link-info:hover,
 .link-info:focus {
-  color: #2196f3;
+  color: var(--color-accent);
 }
 
 /************* Стилізація основної частини ***************/
