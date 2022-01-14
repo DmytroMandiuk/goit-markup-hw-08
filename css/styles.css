@@ -144,15 +144,14 @@ body {
 .names {
   color: var(--color-text);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18em;
-  letter-spacing: 0.03em;
 }
 .position {
+  color: #757575;
+}
+.names-position {
   font-size: 16px;
   line-height: 1.18em;
-  letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacin g: 0.03em;
 }
 /* Стилізація footer */
 .footer {
@@ -181,7 +180,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 /* Стилізація Portfolio */
 .nav-btn {
   background-color: var(--second-bg-color);
