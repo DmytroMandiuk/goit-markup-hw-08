@@ -205,3 +205,6 @@ color: rgba(255, 255, 255, 0.6);
   line-height: 1.87em;
   letter-spacing: 0.03em;
 }
+.is-hidden{
+  display: none;
+}
