@@ -34,6 +34,24 @@ body {
 .list {
   list-style: none;
 }
+.section-title {
+  font-size: 36px;
+  line-height: 1.16em;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*************** Стилізація шапки *************/
 
@@ -45,7 +63,7 @@ body {
   font-size: 26px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
-  weight: 700;
+  font-weight: 700;
 }
 .web-logo {
   color: var(--color-accent);
@@ -58,14 +76,14 @@ body {
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
-.link-active{
+.link-active {
   color: var(--color-accent);
 }
 .link:hover,
 .link:focus {
   color: var(--color-accent);
 }
-/* Стилізація ссилок комунікації + футер  */
+/* Стилізація ссилок комунікації*/
 .link-info {
   text-decoration: none;
   color: #757575;
@@ -106,9 +124,6 @@ body {
   font-family: inherit;
 }
 /******* Стилізація особливості *******/
-.title-hide {
-  visibility: hidden;
-}
 .list-title {
   font-size: var(--regular-size);
   line-height: 1.14em;
@@ -121,24 +136,14 @@ body {
   letter-spacing: 0.03em;
 }
 /* Стилізація секції Чим ми займаємось */
-.section-title {
-  font-size: 36px;
-  line-height: 1.16em;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
+
 /* Стилізація секції Наша команда */
 .conteiner-team {
   background-color: var(--second-bg-color);
 }
-.title-team {
-  font-size: 36px;
-  line-height: 1.16em;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .names {
   color: var(--color-text);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18em;
   letter-spacing: 0.03em;
@@ -160,21 +165,21 @@ body {
   font-size: 26px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
-  weight: 700;
+  font-weight: 700;
 }
 .place {
   color: var(--primary-color-accent);
   font-size: 14px;
   line-height: 1.71em;
-  letter-spaci ng: 0.03em;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .link-footer {
   text-decoration: none;
   font-size: 14px;
-line-height: 1.71em;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стилізація Portfolio */
@@ -204,7 +209,4 @@ color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.87em;
   letter-spacing: 0.03em;
-}
-.is-hidden{
-  display: none;
 }
