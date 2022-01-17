@@ -30,9 +30,21 @@
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
 }
 .list {
   list-style: none;
+  padding: 0;
 }
 .section-title {
   font-size: 36px;
@@ -52,9 +64,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*************** Стилізація шапки *************/
-
 /* Стилізація логотип + ссилок навігації */
 .logo {
   text-decoration: none;
@@ -64,6 +84,7 @@ body {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   font-weight: 700;
+  margin-right: 90px;
 }
 .web-logo {
   color: var(--color-accent);
@@ -96,7 +117,28 @@ body {
 .link-info:focus {
   color: var(--color-accent);
 }
-
+.container-inner {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  margin-right: 50px;
+}
+.nav-list .nav-link:last-child {
+  margin-right: 0;
+}
+.list-info {
+  display: flex;
+  margin-left: auto;
+}
+.info-link:nth-child(odd) {
+  margin-right: 50px;
+}
 /************* Стилізація основної частини ***************/
 .hero {
   background-color: var(--bg-color);
@@ -112,6 +154,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 106px;
 }
 .order {
   box-sizing: border-box;
@@ -122,13 +165,28 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border: solid 2px #2196f3;
+  border-radius: 4px;
+  margin-bottom: 106px;
 }
 /******* Стилізація особливості *******/
+.list-content {
+  display: flex;
+}
+.list-items {
+  margin-right: 30px;
+}
+.list-content > .list-items:last-child {
+  margin-right: 0;
+}
 .list-title {
   font-size: var(--regular-size);
   line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .content {
   font-size: var(--regular-size);
@@ -136,23 +194,53 @@ body {
   letter-spacing: 0.03em;
 }
 /* Стилізація секції Чим ми займаємось */
+.list-phofo {
+  display: flex;
+}
+.photo {
+  margin-right: 30px;
+}
+.photo:last-child {
+  margin-right: 0;
+}
 
 /* Стилізація секції Наша команда */
-.conteiner-team {
+.section-team {
   background-color: var(--second-bg-color);
+}
+.title-inner {
+  margin-bottom: 50px;
 }
 .names {
   color: var(--color-text);
   font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .position {
   color: #757575;
+  padding-bottom: 30px;
 }
 .names-position {
   font-size: 16px;
   line-height: 1.18em;
-  letter-spacin g: 0.03em;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
+.list-team {
+  display: flex;
+}
+.team-description {
+  background-color: var(--primary-color-accent);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-description:last-child {
+  margin-right: 0;
+}
+
 /* Стилізація footer */
 .footer {
   background-color: var(--bg-color);
@@ -165,6 +253,9 @@ body {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   font-weight: 700;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .place {
   color: var(--primary-color-accent);
@@ -172,6 +263,14 @@ body {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin-bottom: 10px;
+}
+.list-link-footer {
+  margin-bottom: 10px;
+}
+.list-link-footer:last-child {
+  margin-bottom: 0;
+  padding-bottom: 60px;
 }
 .link-footer {
   text-decoration: none;
@@ -180,21 +279,61 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-/* Стилізація Portfolio */
-.nav-btn {
+/************** Стилізація Portfolio ****************/
+/* PORTFOLIO HEADER */
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+/* BUTTONS */
+.nav-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.list-button {
+  margin-right: 8px;
+}
+.nav-button > .list-button:last-child {
+  margin-right: 0;
+}
+.btn {
   background-color: var(--second-bg-color);
   color: var(--color-text);
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62em;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
   font-family: inherit;
+  padding: 6px 22px;
+  border: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .nav-btn:hover,
 .nav-btn:focus {
   background-color: var(--color-accent);
   color: var(--primary-color-accent);
+}
+/* LIST PHOTO`S */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+.projects > .projects-item:nth-child(3n) {
+  margin-right: 0;
+}
+.projects > .projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.text-descriprion {
 }
 .list-profession {
   color: var(--color-text);
