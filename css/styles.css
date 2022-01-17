@@ -327,6 +327,7 @@ ul {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  padding-bottom: 20px;
   border: 1px solid #eeeeee;
 }
 .flex-container > .flex-element:nth-child(3n) {
