@@ -105,6 +105,7 @@ ul {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 .link-active {
   color: var(--color-accent);
@@ -115,17 +116,25 @@ ul {
 }
 /* Стилізація ссилок комунікації*/
 .link-info {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.link-info-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 .link-info:hover,
 .link-info:focus {
   color: var(--color-accent);
 }
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -145,7 +154,15 @@ ul {
 }
 /************* Стилізація основної частини ***************/
 .hero {
-  background-color: var(--bg-color);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/mainbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 200px 0;
 }
@@ -333,9 +350,6 @@ ul {
 }
 .flex-element:hover,
 .flex-element:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
