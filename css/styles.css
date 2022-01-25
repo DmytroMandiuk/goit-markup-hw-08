@@ -210,6 +210,7 @@ ul {
   line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .content {
@@ -217,6 +218,14 @@ ul {
   color: var(--second-color-text);
   line-height: 1.7em;
   letter-spacing: 0.03em;
+}
+.icon-box {
+  display: flex;
+  flex-basis: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
 }
 /* Стилізація секції Чим ми займаємось */
 .list-phofo {
@@ -250,7 +259,8 @@ ul {
   text-align: center;
 }
 .description {
-  padding: 30px 0;
+  padding-top: 30px;
+  margin-bottom: 15px;
 }
 .list-team {
   display: flex;
@@ -265,7 +275,37 @@ ul {
 .team-description:last-child {
   margin-right: 0;
 }
+/* SVG команди*/
+.list-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.item-icon {
+  margin-right: 10px;
+}
+.item-icon:last-child {
+  margin-right: 0;
+}
 
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+.social-icon {
+  fill: currentColor;
+}
 /* Стилізація footer */
 .footer {
   background-color: var(--bg-color);
