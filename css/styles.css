@@ -306,6 +306,36 @@ ul {
 .social-icon {
   fill: currentColor;
 }
+/***********SVG постоянние клиенти********* */
+.list-clients {
+  display: flex;
+  justify-content: center;
+}
+.clients-logo {
+  margin-right: 30px;
+}
+.clients-logo:last-child {
+  margin-right: 0;
+}
+.logo-icon {
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: tomato; */
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.logo-icon:hover,
+.logo-icon:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.logo-icon-icon {
+  fill: currentColor;
+}
 /* Стилізація footer */
 .footer {
   background-color: var(--bg-color);
@@ -342,6 +372,14 @@ ul {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+/* FOOTER LINKS */
+.container-inner {
+  display: flex;
+}
+.second-title {
+  text-transform: uppercase;
+  color: var(--primary-color-accent);
 }
 /************** Стилізація Portfolio ****************/
 /* PORTFOLIO HEADER */
