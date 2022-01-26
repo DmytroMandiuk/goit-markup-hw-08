@@ -377,9 +377,40 @@ ul {
 .container-inner {
   display: flex;
 }
+.footer-container {
+  margin-left: 70px;
+}
 .second-title {
   text-transform: uppercase;
   color: var(--primary-color-accent);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.list-footer-icon {
+  display: flex;
+}
+.list-footer-item {
+  margin-right: 10px;
+}
+.list-footer-item:last-child {
+  margin-right: 0;
+}
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--primary-color-accent);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-footer:hover,
+.icon-footer:focus {
+  background-color: var(--color-accent);
 }
 /************** Стилізація Portfolio ****************/
 /* PORTFOLIO HEADER */
