@@ -550,7 +550,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.overlay:hover .flex-text-overlay {
+.link-portfolio:hover .flex-text-overlay {
   transform: translateY(0);
 }
 .flex-text-overlay {
