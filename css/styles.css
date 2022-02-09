@@ -670,6 +670,7 @@ textarea {
   border: 1px solid #757575;
   border-radius: 4px;
 }
+/* Label контейнер */
 .label-modal {
   display: flex;
   flex-direction: column;
@@ -679,9 +680,7 @@ textarea {
 .label-modal:last-child {
   margin-bottom: 20px;
 }
-.label-modal:focus-within .input-modal {
-  color: var(--color-accent);
-}
+/* SPAN */
 .text-label {
   font-size: 12px;
   line-height: 1.16;
@@ -690,19 +689,23 @@ textarea {
   position: absolute;
   top: -15px;
 }
+/* SVG ICON */
 .modal-icons {
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
+  fill: currentColor;
 }
 .input-modal {
-  position: absolute;
   height: 38px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 34px;
+  color: var(--second-color-text);
+  outline: none;
 }
 .coment-area {
   border: 1px solid rgba(33, 33, 33, 0.2);
