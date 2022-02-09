@@ -405,7 +405,7 @@
                 </svg>
             </button>
             
-            <form name="data" class="data-info" autocomplete="on">
+            <form name="data" class="data-info" autocomplete="off">
                 <b class="data-info-title">Оставьте свои данные, мы вам перезвоним</b>
 
                         <label class="label-modal">
@@ -413,8 +413,11 @@
                             <svg width="18px" height="18px" class="modal-icons">
                                 <use href="./image/symbol-defs.svg#icon-person-black"></use>
                             </svg>
-                            <input type="text" name="name" autofocus  
-                            autocomplete="name" class="input-modal">
+                            <input 
+                            type="text" 
+                            name="name" 
+                            autofocus  
+                            class="input-modal">
                         </label>
 
                         <label class="label-modal">
@@ -422,7 +425,11 @@
                             <svg width="18px" height="18px" class="modal-icons">
                                 <use href="./image/symbol-defs.svg#icon-phone-black"></use>
                             </svg>
-                            <input type="tel" name="tel" class="input-modal" required>
+                            <input 
+                            type="tel" 
+                            name="tel" 
+                            class="input-modal" 
+                            required>
                         </label>
 
                         <label class="label-modal">
@@ -430,18 +437,26 @@
                             <svg width="18px" height="18px" class="modal-icons">
                                 <use href="./image/symbol-defs.svg#icon-email-black"></use>
                             </svg>
-                            <input type="email" name="mail" class="input-modal" required>
+                            <input 
+                            type="email" 
+                            name="mail" 
+                            class="input-modal" 
+                            required>
                         </label>
 
                         <label class="label-modal">
                             <span class="text-label">Комментарий</span>
-                            <textarea class="coment-area" name="feedback" rows="10" placeholder="Введите текст"></textarea>
+                            <textarea 
+                            class="coment-area" 
+                            name="feedback" 
+                            rows="10" 
+                            placeholder="Введите текст"></textarea>
                         </label>
 
                 <input type="checkbox" name="" id="checkbox">
                 <label for="checkbox">Соглашаюсь с рассылкой и принимаю 
                     <a href="#" class="conditions">Условия договора</a></label>
-                <button type="button" class="btn-modal">Отправить</button>
+                <button type="submit" class="btn-modal">Отправить</button>
             </form>
         </div>
     </div>
