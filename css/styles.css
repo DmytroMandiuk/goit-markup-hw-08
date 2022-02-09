@@ -198,18 +198,17 @@ img {
   text-transform: uppercase;
 }
 .order {
-  box-sizing: border-box;
   color: var(--primary-color-accent);
   background-color: var(--color-accent);
   font-size: var(--second-size);
   line-height: 1.87em;
   letter-spacing: 0.06em;
   cursor: pointer;
-  font-family: inherit;
   margin-top: 30px;
-  padding: 10px 32px;
   border: solid 2px #2196f3;
   border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 /******* Стилізація особливості *******/
 .section-padding {
@@ -595,14 +594,117 @@ img {
 .modal-btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: #ffffff;
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover {
+  color: var(--color-accent);
+}
+.modal-btn-ex {
+  fill: currentColor;
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+/******** ДЗ №6 ********/
+
+/* EMAIL СТУДІЯ */
+.conteiner-form {
+  margin-left: 90px;
+}
+.btn-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Кнопка модалки */
+.btn-modal {
+  color: var(--primary-color-accent);
+  background-color: var(--color-accent);
+  font-size: var(--second-size);
+  line-height: 1.87em;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: solid 2px #2196f3;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* ссилка модалки */
+.conditions {
+  text-decoration: underline;
+}
+/* Загальне на форму */
+.data-info {
+  width: 450px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Заголовок модалки */
+.data-info-title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+/* Коментарі */
+textarea {
+  margin-top: 5px;
+  resize: none;
+  height: 120px;
+  border: 1px solid #757575;
+  border-radius: 4px;
+}
+.label-modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 30px;
+}
+.label-modal:last-child {
+  margin-bottom: 20px;
+}
+.label-modal:focus-within .input-modal {
+  color: var(--color-accent);
+}
+.text-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-color-text);
+  position: absolute;
+  top: -15px;
+}
+.modal-icons {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.input-modal {
+  position: absolute;
+  height: 38px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 34px;
+}
+.coment-area {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
