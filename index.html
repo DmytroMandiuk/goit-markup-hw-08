@@ -143,14 +143,13 @@
                                     </a>
                                 </li>
                                 <li class="item-icon">
-                                    <a href=https://twitter.com/newsua_one?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                        class="link-icon">
+                                    <a href="#" class="link-icon">
                                         <svg class="social-icon" width="20px" height="20px">
                                             <use href="image/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="item-icon" class="link-icon">
+                                <li class="item-icon">
                                     <a href="#" class="link-icon">
                                         <svg class="social-icon" width="20px" height="20px">
                                             <use href="image/symbol-defs.svg#icon-facebook"></use>
@@ -189,7 +188,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="item-icon" class="link-icon">
+                                <li class="item-icon">
                                     <a href="#" class="link-icon">
                                         <svg class="social-icon" width="20px" height="20px">
                                             <use href="image/symbol-defs.svg#icon-facebook"></use>
@@ -228,7 +227,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="item-icon" class="link-icon">
+                                <li class="item-icon">
                                     <a href="#" class="link-icon">
                                         <svg class="social-icon" width="20px" height="20px">
                                             <use href="image/symbol-defs.svg#icon-facebook"></use>
@@ -266,7 +265,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="item-icon" class="link-icon">
+                                <li class="item-icon">
                                     <a href="#" class="link-icon">
                                         <svg class="social-icon" width="20px" height="20px">
                                             <use xlink:href="image/symbol-defs.svg#icon-facebook"></use>
@@ -287,7 +286,7 @@
                 </ul>
             </div>
         </section>
-        <!-- -----------------Постоянные клиенты--------------- -->
+        <!-- Постоянние клиенти -->
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
@@ -410,43 +409,54 @@
                 </svg>
             </button>
             
-            <form name="data" class="data-info" autocomplete="off">
+            <form 
+            name="data" 
+            class="data-info" 
+            autocomplete="off">
                 <b class="data-info-title">Оставьте свои данные, мы вам перезвоним</b>
 
                         <label class="label-modal">
                             <span class="text-label">Имя</span>
-                            <svg width="18px" height="18px" class="modal-icons">
-                                <use href="./image/symbol-defs.svg#icon-person-black"></use>
-                            </svg>
-                            <input 
-                            type="text" 
-                            name="name" 
-                            autofocus  
-                            class="input-modal">
+                            <div class="modal-container">
+                                <svg 
+                                width="18px" 
+                                height="18px" 
+                                class="modal-icons">
+                                    <use href="./image/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                                <input 
+                                type="text" 
+                                name="name" 
+                                autofocus class="input-modal">
+                            </div>
                         </label>
 
                         <label class="label-modal">
                             <span class="text-label">Телефон</span>
-                            <svg width="18px" height="18px" class="modal-icons">
-                                <use href="./image/symbol-defs.svg#icon-phone-black"></use>
-                            </svg>
-                            <input 
-                            type="tel" 
-                            name="tel" 
-                            class="input-modal" 
-                            required>
+                            <div class="modal-container">
+                                <svg width="18px" height="18px" class="modal-icons">
+                                    <use href="./image/symbol-defs.svg#icon-phone-black"></use>
+                                </svg>
+                                <input 
+                                type="tel" 
+                                name="tel" 
+                                class="input-modal" 
+                                required>
+                            </div>
                         </label>
 
                         <label class="label-modal">
                             <span class="text-label">Почта</span>
-                            <svg width="18px" height="18px" class="modal-icons">
-                                <use href="./image/symbol-defs.svg#icon-email-black"></use>
-                            </svg>
-                            <input 
-                            type="email" 
-                            name="mail" 
-                            class="input-modal" 
-                            required>
+                            <div class="modal-container">
+                                <svg width="18px" height="18px" class="modal-icons">
+                                    <use href="./image/symbol-defs.svg#icon-email-black"></use>
+                                </svg>
+                                <input 
+                                type="email" 
+                                name="mail" 
+                                class="input-modal" 
+                                required>
+                            </div>
                         </label>
 
                         <label class="label-modal">
@@ -465,7 +475,7 @@
                     name="checkbox" 
                     class="checkbox">
                     <span class="check-icon"></span>
-                    Соглашаюсь с рассылкой и принимаю 
+                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span> 
                     <a href="#" class="conditions">Условия договора</a>
                 </label>
                 <button 

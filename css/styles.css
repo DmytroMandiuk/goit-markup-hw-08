@@ -593,16 +593,19 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
   color: var(--color-accent);
 }
 .modal-btn-ex {
@@ -639,6 +642,7 @@ img {
 }
 .subscribe__email {
   height: 50px;
+  width: 360px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -669,15 +673,15 @@ img {
 /* ссилка модалки */
 .conditions {
   display: inline-block;
-  text-decoration: underline;
+  border-bottom: 1px solid var(--color-accent);
   margin-left: 3px;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 /* Загальне на форму */
 .data-info {
-  width: 460px;
-  margin-top: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 40px;
 }
 /* Заголовок модалки */
 .data-info-title {
@@ -686,7 +690,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 /* Коментарі */
 textarea {
@@ -700,10 +704,6 @@ textarea {
 .label-modal {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-bottom: 30px;
-}
-.label-modal:last-child {
   margin-bottom: 20px;
 }
 .label-modal:focus-within .modal-icons {
@@ -716,8 +716,10 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--second-color-text);
-  position: absolute;
-  top: -15px;
+  margin-bottom: 7px;
+}
+.modal-container {
+  position: relative;
 }
 /* SVG ICON */
 .modal-icons {
@@ -762,6 +764,16 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+}
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
 }
 .check-icon {
   display: inline-block;
@@ -770,6 +782,9 @@ textarea {
   border: 2px solid var(--color-text);
   border-radius: 4px;
   margin-right: 4px;
+}
+.label-checkbox:focus-within {
+  border-color: var(--color-accent);
 }
 .checkbox:checked + .check-icon {
   border-color: var(--color-accent);
