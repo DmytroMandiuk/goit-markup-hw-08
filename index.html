@@ -381,17 +381,22 @@
                     </ul>
                 </div>
                 <div class="conteiner-form">
-                    <form action="">
-                        <label class="second-title">
-                            Подпишитесь на рассылку
-                        <input type="email" name="mail">
-                        </label>
+                    <form name="subscribe" class="subscribe" autocomplete="off">
+                        <div class="subscribe-inner">
+                        <label class="second-title" for="subscribe">Подпишитесь на рассылку</label>
+                            <input 
+                            type="email" 
+                            name="mail" 
+                            id="subscribe" 
+                            class="subscribe__email"
+                            placeholder="E-mail">
+                            </div>
+                            <button type="submit" class="order btn-sign-up">Подписаться
+                                <svg width="24px" height="24px">
+                                    <use href="./image/symbol-defs.svg#icon-telegram"></use>
+                                </svg>
+                            </button>
                         
-                        <button type="button" class="order btn-sign-up">Подписаться
-                            <svg width="24px" height="24px">
-                                <use href="./image/symbol-defs.svg#icon-telegram"></use>
-                            </svg>
-                        </button>
                     </form>
                     
                 </div>
@@ -453,10 +458,19 @@
                             placeholder="Введите текст"></textarea>
                         </label>
 
-                <input type="checkbox" name="" id="checkbox">
-                <label for="checkbox">Соглашаюсь с рассылкой и принимаю 
-                    <a href="#" class="conditions">Условия договора</a></label>
-                <button type="submit" class="btn-modal">Отправить</button>
+                
+                <label class="label-checkbox">
+                    <input 
+                    type="checkbox" 
+                    name="checkbox" 
+                    class="checkbox">
+                    <span class="check-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="#" class="conditions">Условия договора</a>
+                </label>
+                <button 
+                type="submit" 
+                class="btn-modal">Отправить</button>
             </form>
         </div>
     </div>

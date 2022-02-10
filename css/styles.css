@@ -437,6 +437,7 @@ img {
   line-height: 1.14em;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-footer-icon {
   display: flex;
@@ -623,8 +624,31 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 12px;
 }
-
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+}
+.subscribe-inner {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-inner:focus-within .second-title {
+  color: var(--color-accent);
+}
+.subscribe__email {
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--primary-color-accent);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe__email:focus {
+  border: 1px solid var(--color-accent);
+}
 /* Кнопка модалки */
 .btn-modal {
   color: var(--primary-color-accent);
@@ -644,11 +668,13 @@ img {
 }
 /* ссилка модалки */
 .conditions {
+  display: inline-block;
   text-decoration: underline;
+  margin-left: 3px;
 }
 /* Загальне на форму */
 .data-info {
-  width: 450px;
+  width: 460px;
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -725,4 +751,30 @@ textarea {
 }
 .coment-area:focus {
   border: 2px solid var(--color-accent);
+}
+/* CHECKBOX */
+.label-checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-text);
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.checkbox:checked + .check-icon {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  background-image: url(../image/check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
