@@ -673,6 +673,7 @@ img {
 /* ссилка модалки */
 .conditions {
   display: inline-block;
+  color: var(--color-accent);
   border-bottom: 1px solid var(--color-accent);
   margin-left: 3px;
   font-size: 14px;
@@ -759,6 +760,7 @@ textarea {
   display: flex;
   align-items: center;
 }
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -783,7 +785,10 @@ textarea {
   border-radius: 4px;
   margin-right: 4px;
 }
-.label-checkbox:focus-within {
+.check-icon:focus {
+  border-color: var(--color-accent);
+}
+.checkbox:focus {
   border-color: var(--color-accent);
 }
 .checkbox:checked + .check-icon {
@@ -792,4 +797,7 @@ textarea {
   background-image: url(../image/check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+.checkbox:focus + .check-icon {
+  border-color: var(--color-accent);
 }
