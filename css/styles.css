@@ -39,8 +39,7 @@ h2,
 h3,
 h4,
 h5,
-p,
-ul {
+p {
   margin: 0;
 }
 a {
@@ -49,10 +48,13 @@ a {
 img {
   display: block;
 }
-.list {
+ul {
+  margin: 0;
   list-style: none;
   padding: 0;
 }
+
+/* ТИТУЛЬНИЙ текст для секцій */
 .section-title {
   font-size: 36px;
   line-height: 1.16em;
@@ -92,6 +94,7 @@ img {
   display: flex;
   align-items: center;
 }
+/* логотип */
 .logo {
   text-decoration: none;
   color: var(--color-text);
@@ -102,10 +105,23 @@ img {
   font-weight: 700;
   margin-right: 90px;
 }
-.web-logo {
+/* спан логотип */
+.logo__web {
   color: var(--color-accent);
 }
-.link {
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list .nav-link:last-child {
+  margin-right: 0;
+}
+.nav-list__item {
+  margin-right: 50px;
+}
+
+/* ссилки навігації */
+.nav-list__link {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
@@ -115,11 +131,11 @@ img {
   display: inline-block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-active {
+.nav-list__link-active {
   color: var(--color-accent);
   position: relative;
 }
-.link-active::after {
+.nav-list__link-active::after {
   content: " ";
   display: block;
   width: 100%;
@@ -129,12 +145,21 @@ img {
   position: absolute;
   top: 45px;
 }
-.link:hover,
-.link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--color-accent);
 }
-/* Стилізація ссилок комунікації*/
-.link-info {
+
+/* Стилізація ссилок контактів*/
+
+.list-info {
+  display: flex;
+  margin-left: auto;
+}
+.list-info__item:nth-child(odd) {
+  margin-right: 50px;
+}
+.list-info__link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -146,32 +171,15 @@ img {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-info-icon {
+.list-info__link:hover,
+.list-info__link:focus {
+  color: var(--color-accent);
+}
+.list-info__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.link-info:hover,
-.link-info:focus {
-  color: var(--color-accent);
-}
 
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.nav-link {
-  margin-right: 50px;
-}
-.nav-list .nav-link:last-child {
-  margin-right: 0;
-}
-.list-info {
-  display: flex;
-  margin-left: auto;
-}
-.info-link:nth-child(odd) {
-  margin-right: 50px;
-}
 /************* Стилізація основної частини ***************/
 .hero {
   background-color: #c4c4c4;
@@ -211,34 +219,20 @@ img {
   height: 50px;
 }
 /******* Стилізація особливості *******/
-.section-padding {
+.section-content {
   padding-top: 94px;
 }
 .list-content {
   display: flex;
 }
-.list-items {
+.list-content__item {
   width: 270px;
   margin-right: 30px;
 }
-.list-content > .list-items:last-child {
+.list-content > .list-content__item:last-child {
   margin-right: 0;
 }
-.list-title {
-  font-size: var(--regular-size);
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-bottom: 10px;
-}
-.content {
-  font-size: var(--regular-size);
-  color: var(--second-color-text);
-  line-height: 1.7em;
-  letter-spacing: 0.03em;
-}
-.icon-box {
+.list-content__icon {
   display: flex;
   height: 120px;
   background-color: #f5f4fa;
@@ -246,26 +240,39 @@ img {
   justify-content: center;
   margin-bottom: 30px;
 }
+.list-content__title {
+  font-size: var(--regular-size);
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.list-content__text {
+  font-size: var(--regular-size);
+  color: var(--second-color-text);
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+}
+
 /* Стилізація секції Чим ми займаємось */
-.list-phofo {
+.list-photo {
   display: flex;
 }
-.photo {
+.list-photo__item {
   margin-right: 30px;
 }
-.photo:last-child {
+.list-photo__item:last-child {
   margin-right: 0;
 }
-.photo-block {
-  display: block;
-}
-/* ДЗ №5 */
-.thumb {
+.list-photo__thumb {
   position: relative;
   overflow: hidden;
 }
-
-.photo-description-text {
+.list-photo__block {
+  display: block;
+}
+.list-photo__text {
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--section-bg-color);
@@ -287,51 +294,52 @@ img {
 .title-inner {
   margin-bottom: 50px;
 }
-.names {
-  color: var(--color-text);
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-.position {
-  color: #757575;
-  padding-bottom: 15px;
-}
-.names-position {
-  font-size: 16px;
-  line-height: 1.18em;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-.description {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .list-team {
   display: flex;
 }
-.team-description {
+.list-team__card {
   background-color: var(--primary-color-accent);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-description:last-child {
+.list-team__card:last-child {
   margin-right: 0;
 }
+.list-team__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.list-team__names {
+  color: var(--color-text);
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.list-team__position {
+  color: #757575;
+  padding-bottom: 15px;
+}
+.list-team__names-position {
+  font-size: 16px;
+  line-height: 1.18em;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 /* SVG команди*/
-.list-icons {
+.list-icon {
   display: flex;
   justify-content: center;
 }
-.item-icon {
+.list-icon__item {
   margin-right: 10px;
 }
-.item-icon:last-child {
+.list-icon__item:last-child {
   margin-right: 0;
 }
 
-.link-icon {
+.list-icon__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,13 +351,13 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-icon:hover,
-.link-icon:focus {
+.list-icon__link:hover,
+.list-icon__link:focus {
   color: #ffffff;
   border-radius: 50%;
   background-color: var(--color-accent);
 }
-.social-icon {
+.list-icon__social {
   fill: currentColor;
 }
 /***********SVG постоянние клиенти********* */
@@ -357,13 +365,13 @@ img {
   display: flex;
   justify-content: center;
 }
-.clients-logo {
+.list-clients__item {
   margin-right: 30px;
 }
-.clients-logo:last-child {
+.list-clients__item:last-child {
   margin-right: 0;
 }
-.logo-icon {
+.list-clients__logo {
   width: 170px;
   height: 92px;
   color: #afb1b8;
@@ -376,12 +384,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-icon:hover,
-.logo-icon:focus {
+.list-clients__logo:hover,
+.list-clients__logo:focus {
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
-.logo-icon-icon {
+.list-clients__icon {
   fill: currentColor;
 }
 /* Стилізація footer */
@@ -389,7 +397,11 @@ img {
   background-color: var(--bg-color);
   padding: 60px 0;
 }
-.logo-footer {
+.container-inner {
+  display: flex;
+  align-items: baseline;
+}
+.column__logo {
   text-decoration: none;
   color: var(--primary-color-accent);
   font-family: "Raleway", sans-serif;
@@ -400,7 +412,7 @@ img {
   display: inline-block;
   margin-bottom: 20px;
 }
-.place {
+.column__place {
   color: var(--primary-color-accent);
   font-size: 14px;
   line-height: 1.71em;
@@ -408,25 +420,22 @@ img {
   font-style: normal;
   margin-bottom: 10px;
 }
-.list-link-footer {
+.item-footer {
   margin-bottom: 10px;
 }
-.list-link-footer:last-child {
+.item-footer:last-child {
   margin-bottom: 0;
 }
-.link-footer {
+.item-footer__link {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* FOOTER LINKS */
-.container-inner {
-  display: flex;
-  align-items: baseline;
-}
-.footer-container {
+.container-wrapper {
   margin-left: 70px;
 }
 .second-title {
