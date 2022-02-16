@@ -15,11 +15,11 @@
 <body>
     <!-- Шапка -->
     <header class="header">
-            <div class="container container-header">
+            <div class="container container--container-header">
                     <a href="index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
                     <nav>
                             <ul class="nav-list">
-                                <li class="nav-list__item"><a href="index.html" class="nav-list__link nav-list__link-active">Студия</a></li>
+                                <li class="nav-list__item"><a href="index.html" class="nav-list__link nav-list--active">Студия</a></li>
                                 <li class="nav-list__item"><a href="portfolio.html" class="nav-list__link">Портфолио</a></li>
                                 <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
                             </ul>
@@ -124,17 +124,17 @@
             </div>
         </section>
         <!-- Наша команда -->
-        <section class="section section-team">
+        <section class="section section--background">
             <div class="container">
-                <h2 class="section-title title-inner">Наша команда</h2>
+                <h2 class="section-title section-title--margin">Наша команда</h2>
                 <ul class="list-team">
                     <li class="list-team__card">
                         <img src="./image/product-designer.jpg" 
                         alt="Игорь Демьяненко Product Designer" 
                         width="270">
                         <div class="list-team__description">
-                            <h3 class="list-team__names list-team__names-position">Игорь Демьяненко</h3>
-                            <p class="list-team__position list-team__names-position">Product Designer</p>
+                            <h3 class="list-team__names list-team--typography">Игорь Демьяненко</h3>
+                            <p class="list-team__position list-team--typography">Product Designer</p>
                             <ul class="list list-icon">
                                 <li class="list-icon__item">
                                     <a href="#" class="list-icon__link">
@@ -171,8 +171,8 @@
                     <li class="list-team__card">
                         <img src="./image/frontend-developer.jpg" alt="Ольга Репина Frontend Developer" width="270">
                         <div class="list-team__description">
-                            <h3 class="list-team__names list-team__names-position">Ольга Репина</h3>
-                            <p class="list-team__position list-team__names-position">Frontend Developer</p>
+                            <h3 class="list-team__names list-team--typography">Ольга Репина</h3>
+                            <p class="list-team__position list-team--typography">Frontend Developer</p>
                             <ul class="list list-icon">
                                 <li class="list-icon__item">
                                     <a href="#" class="list-icon__link">
@@ -210,8 +210,8 @@
                     <li class="list-team__card">
                         <img src="./image/Marketing.jpg" alt="Николай Тарасов Marketing" width="270">
                         <div class="list-team__description">
-                            <h3 class="list-team__names list-team__names-position">Николай Тарасов</h3>
-                            <p class="list-team__position list-team__names-position">Marketing</p>
+                            <h3 class="list-team__names list-team--typography">Николай Тарасов</h3>
+                            <p class="list-team__position list-team--typography">Marketing</p>
                             <ul class="list list-icon">
                                 <li class="list-icon__item">
                                     <a href="#" class="list-icon__link">
@@ -249,8 +249,8 @@
                     <li class="list-team__card">
                         <img src="./image/designer.jpg" alt="Михаил Ермаков UI Designer" width="270">
                         <div class="list-team__description">
-                            <h3 class="list-team__names list-team__names-position">Михаил Ермаков</h3>
-                            <p class="list-team__position list-team__names-position">UI Designer</p>
+                            <h3 class="list-team__names list-team--typography">Михаил Ермаков</h3>
+                            <p class="list-team__position list-team--typography">UI Designer</p>
                             <ul class="list list-icon">
                                 <li class="list-icon__item">
                                     <a href="#" class="list-icon__link">
@@ -291,7 +291,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="list list-clients">
+                <ul class="list-clients">
                     <li class="list-clients__item">
                         <a href="#" class="list-clients__logo">
                             <svg class="list-clients__icon" width="106px" height="60px">
@@ -340,58 +340,58 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-        <div class="container container-inner">
+        <div class="container container--inner">
                 <div class="column">
                     <a href="index.html" class="column__logo"><span class="logo__web">Web</span>Studio</a>
                     <address class="column__place">г. Киев, пр-т Леси Украинки, 26</address>
                     <ul class="column__list">
-                        <li class="item-footer"><a href="mailto:info@devstudio.com" class="item-footer__link">info@devstudio.com</a></li>
-                        <li class="item-footer"><a href="tel:+380961111111" class="item-footer__link">+38 096 111 11 11</a></li>
+                        <li class="column__item"><a href="mailto:info@devstudio.com" class="column__link">info@devstudio.com</a></li>
+                        <li class="column__item"><a href="tel:+380961111111" class="column__link">+38 096 111 11 11</a></li>
                     </ul>
                 </div>
-                <div class="container-wrapper">
-                    <h3 class="second-title">присоединяйтесь</h3>
-                    <ul class="list-footer-icon">
-                        <li class="list-footer-item">
-                            <a class="icon-footer" href="https://www.instagram.com/">
-                                <svg class="social-icon" width="20px" height="20px">
+                <div class="wrapper">
+                    <h3 class="wrapper__title">присоединяйтесь</h3>
+                    <ul class="wrapper__list">
+                        <li class="wrapper__item">
+                            <a class="wraper__link" href="https://www.instagram.com/">
+                                <svg class="wraper__icon" width="20px" height="20px">
                                     <use href="image/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="list-footer-item">
-                            <a class="icon-footer" href="https://twitter.com/?lang=uk">
-                                <svg class="social-icon" width="20px" height="20px">
+                        <li class="wrapper__item">
+                            <a class="wraper__link" href="https://twitter.com/?lang=uk">
+                                <svg class="wraper__icon" width="20px" height="20px">
                                     <use href="image/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="list-footer-item">
-                            <a class="icon-footer" href="https://www.facebook.com/">
-                        <svg class="social-icon" width="20px" height="20px">
+                        <li class="wrapper__item">
+                            <a class="wraper__link" href="https://www.facebook.com/">
+                        <svg class="wraper__icon" width="20px" height="20px">
                             <use href="image/symbol-defs.svg#icon-facebook"></use>
                         </svg></a>
                     </li>
-                        <li class="list-footer-item">
-                            <a class="icon-footer" href="https://www.linkedin.com/">
-                        <svg class="social-icon" width="20px" height="20px">
+                        <li class="wrapper__item">
+                            <a class="wraper__link" href="https://www.linkedin.com/">
+                        <svg class="wraper__icon" width="20px" height="20px">
                             <use href="image/symbol-defs.svg#icon-linkedin"></use>
                         </svg></a>
                     </li>
                     </ul>
                 </div>
-                <div class="conteiner-form">
-                    <form name="subscribe" class="subscribe" autocomplete="off">
-                        <div class="subscribe-inner">
-                        <label class="second-title" for="subscribe">Подпишитесь на рассылку</label>
+                <div class="form">
+                    <form name="subscribe" class="form__subscribe" autocomplete="off">
+                        <div class="form__inner">
+                        <label class="form__title" for="subscribe">Подпишитесь на рассылку</label>
                             <input 
                             type="email" 
                             name="mail" 
                             id="subscribe" 
-                            class="subscribe__email"
+                            class="form__email"
                             placeholder="E-mail">
                             </div>
-                            <button type="submit" class="order btn-sign-up">Подписаться
+                            <button type="submit" class="form__sign-up order">Подписаться
                                 <svg width="24px" height="24px">
                                     <use href="./image/symbol-defs.svg#icon-telegram"></use>
                                 </svg>
@@ -402,86 +402,86 @@
                 </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" data-modal-close>
+            <button class="modal__btn" data-modal-close>
                 <svg width="11px" height="11px" >
-                    <use href="image/symbol-defs.svg#icon-ex" class="modal-btn-ex"></use>
+                    <use href="image/symbol-defs.svg#icon-ex" class="modal__ex"></use>
                 </svg>
             </button>
             
             <form 
             name="data" 
-            class="data-info" 
+            class="data" 
             autocomplete="off">
-                <b class="data-info-title">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="data__title">Оставьте свои данные, мы вам перезвоним</b>
 
-                        <div class="label-modal">
-                            <span class="text-label">Имя</span>
-                            <label class="modal-container">
+                        <div class="data__container">
+                            <span class="data__text">Имя</span>
+                            <label class="data__label">
                                 <svg 
                                 width="18px" 
                                 height="18px" 
-                                class="modal-icons">
+                                class="data__icons">
                                     <use href="./image/symbol-defs.svg#icon-person-black"></use>
                                 </svg>
                                 <input 
                                 type="text" 
                                 name="name" 
-                                autofocus class="input-modal">
+                                autofocus class="data__input">
                             </label>
                         </div>
 
-                        <div class="label-modal">
-                            <span class="text-label">Телефон</span>
-                            <label class="modal-container">
-                                <svg width="18px" height="18px" class="modal-icons">
+                        <div class="data__container">
+                            <span class="data__text">Телефон</span>
+                            <label class="data__label">
+                                <svg width="18px" height="18px" class="data__icons">
                                     <use href="./image/symbol-defs.svg#icon-phone-black"></use>
                                 </svg>
                                 <input 
                                 type="tel" 
                                 name="tel" 
-                                class="input-modal" 
+                                class="data__input" 
                                 required>
                             </label>
                         </div>
 
-                        <div class="label-modal">
-                            <span class="text-label">Почта</span>
-                            <label class="modal-container">
-                                <svg width="18px" height="18px" class="modal-icons">
+                        <div class="data__container">
+                            <span class="data__text">Почта</span>
+                            <label class="data__label">
+                                <svg width="18px" height="18px" class="data__icons">
                                     <use href="./image/symbol-defs.svg#icon-email-black"></use>
                                 </svg>
                                 <input 
                                 type="email" 
                                 name="mail" 
-                                class="input-modal" 
+                                class="data__input" 
                                 required>
                             </label>
                         </div>
 
-                        <label class="label-modal">
-                            <span class="text-label">Комментарий</span>
+                        <label class="data__container">
+                            <span class="data__text">Комментарий</span>
                             <textarea 
-                            class="coment-area" 
+                            class="data__coment" 
                             name="feedback" 
                             rows="10" 
                             placeholder="Введите текст"></textarea>
                         </label>
 
                 
-                <label class="label-checkbox">
+                <label class="checkbox">
                     <input 
                     type="checkbox" 
                     name="checkbox" 
-                    class="checkbox">
-                    <span class="check-icon"></span>
-                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span> 
-                    <a href="#" class="conditions">Условия договора</a>
+                    class="checkbox__area">
+                    <span class="checkbox__icon"></span>
+                    <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span> 
+                    <a href="#" class="checkbox__conditions">Условия договора</a>
                 </label>
                 <button 
                 type="submit" 
-                class="btn-modal">Отправить</button>
+                class="order modal-order">Отправить</button>
             </form>
         </div>
     </div>
