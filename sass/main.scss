@@ -1,0 +1,24 @@
+// utils
+@import "./utils/variables";
+// base
+@import "./base/reset-style";
+@import "./base/global-style";
+// layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/specific-first";
+@import "./layout/skills-second";
+@import "./layout/team";
+@import "./layout/partners";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./layout/modal";
+
+// components
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/button-order";
+@import "./components/social";
+@import "./components/subscribe-footer";
+@import "./components/nav-portfolio";
+@import "./components/btn-ex-modal";

@@ -1,0 +1,34 @@
+.list-clients {
+  display: flex;
+  justify-content: center;
+}
+.list-clients__item {
+  margin-right: 30px;
+
+  &:last-child {
+  margin-right: 0;
+}
+}
+
+.list-clients__logo {
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $color-accent;
+    border-color: $color-accent;
+    }
+}
+
+.list-clients__icon {
+  fill: currentColor;
+}
