@@ -15,31 +15,50 @@
     <!-- Шапка -->
     <header class="header">
             <div class="container container--container-header">
+                <nav class="menu">
                     <a href="index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-                    <nav>
-                            <ul class="nav-list">
-                                <li class="nav-list__item"><a href="index.html" class="nav-list__link nav-list--active">Студия</a></li>
-                                <li class="nav-list__item"><a href="portfolio.html" class="nav-list__link">Портфолио</a></li>
-                                <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-                            </ul>
-                    </nav>
-                            <ul class="list-info">
-                                <li class="list-info__item">
-                                        <a href="mailto:info@devstudio.com" class="list-info__link">
-                                            <svg class="list-info__icon" width="16px" height="16px">
-                                                <use href="image/symbol-defs.svg#icon-envelope"></use>
-                                            </svg>
-                                        info@devstudio.com</a>
-                                    </li>
-                                <li class="info-link">
-                                    <a href="tel:+380961111111" class="list-info__link">
-                                        <svg class="list-info__icon" width="16px" height="16px">
-                                            <use href="image/symbol-defs.svg#icon-phone"></use>
+                    <button 
+                    type="button" 
+                    class="menu-icon is-open" 
+                    aria-expanded="false"
+                    aria-controls="menu-container" 
+                    data-menu-button>
+                        <svg
+                        width="40px" 
+                        height="40px"
+                        aria-label="Переключатель"
+                        >
+                            <use class="menu-icon__cross" href="./image/symbol-defs.svg#icon-menu"></use>
+                            <use class="menu-icon__menu " href="./image/symbol-defs.svg#icon-ex"></use>
+                        </svg>
+                    </button>
+                  <div class="menu-container" id="menu-container" data-menu>
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="index.html" class="nav-list__link nav-list--active">Студия</a></li>
+                            <li class="nav-list__item"><a href="portfolio.html" class="nav-list__link">Портфолио</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                        
+                        <ul class="list-info">
+                            <li class="list-info__item">
+                                <a href="mailto:info@devstudio.com" class="list-info__link">
+                                    <svg class="list-info__icon" width="16px" height="16px">
+                                            <use href="image/symbol-defs.svg#icon-envelope"></use>
                                         </svg>
-                                        +38 096 111 11 11
-                                    </a>
-                                </li>
-                            </ul>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="list-info__item">
+                                <a href="tel:+380961111111" class="list-info__link">
+                                    <svg class="list-info__icon" width="16px" height="16px">
+                                            <use href="image/symbol-defs.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>  
     </header>
      <!-- основна частина сайта -->
@@ -53,7 +72,7 @@
             
         </section>
         <!-- Особливості -->
-        <section class="section-content">
+        <!-- <section class="section-content">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="list-content">
@@ -95,9 +114,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Чим ми займаємось -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="list-photo">
@@ -121,9 +140,9 @@
                         </li>
                     </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Наша команда -->
-        <section class="section section--background">
+        <!-- <section class="section section--background">
             <div class="container">
                 <h2 class="section-title section-title--margin">Наша команда</h2>
                 <ul class="list-team">
@@ -285,9 +304,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Постоянние клиенти -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list-clients">
@@ -335,10 +354,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container--inner">
                 <div class="column">
                     <a href="index.html" class="column__logo"><span class="logo__web">Web</span>Studio</a>
@@ -400,8 +419,8 @@
                     
                 </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn-ex" data-modal-close>
                 <svg width="11px" height="11px" >
@@ -483,7 +502,8 @@
                 class="order modal-order">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
