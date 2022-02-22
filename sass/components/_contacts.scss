@@ -1,14 +1,14 @@
 /* Стилізація ссилок контактів*/
 
-// .list-info {
-//   display: flex;
-//   margin-left: auto;
-//   &__item:nth-child(odd) {
-//     margin-right: 50px;
-//   }
+.list-info {
+  display: flex;
+  margin-left: auto;
+  &__item:nth-child(odd) {
+    margin-right: 50px;
+  }
 .list-info__link {
-  //     display: flex;
-  //     align-items: center;
+      display: flex;
+      align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -21,8 +21,8 @@
     color: $color-accent;
   }
 }
-//   .list-info__icon {
-//     fill: currentColor;
-//     margin-right: 10px;
-//   }
-// }
+  .list-info__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
