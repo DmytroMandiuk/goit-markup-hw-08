@@ -2,20 +2,19 @@
   // margin-left: 90px;
   &__subscribe {
     display: flex;
-    align-items: flex-end;
-  }
-  &__subscribe {
-    @media screen and (min-width: 480px) and (max-width: 1139px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) and (min-width: 1139px) {
+      flex-direction: row;
+      align-items: flex-end;
     }
   }
   &__inner {
     display: flex;
     flex-direction: column;
-    @media (min-width: 480px) and (max-width: 1139px) {
-      align-items: center;
+    align-items: center;
+    @media screen and (min-width: 1140px) {
+      align-items: flex-start;
     }
   }
 }
@@ -37,11 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @media screen and (min-width: 1140px) {
+    margin-top: 0;
+  }
 }
 
 .form__email {
   height: 50px;
-  min-width: 360px;
+  max-width: 360px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -55,5 +57,8 @@
   @media screen and (min-width: 480px) and (max-width: 1139px) {
     min-width: 450px;
     margin-right: 0;
+  }
+  @media screen and (min-width: 1140px) {
+    min-width: 358px;
   }
 }
