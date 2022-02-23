@@ -3,10 +3,10 @@
   padding: 25px 0;
   position: relative;
 }
-.container--container-header {
-  display: flex;
-  align-items: center;
-}
+// .container--container-header {
+//   display: flex;
+//   align-items: center;
+// }
 .menu {
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@
 }
 .menu-container {
   display: none;
-  position: absolute;
+  // position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
