@@ -1,12 +1,31 @@
 .list-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
   margin-bottom: 50px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .list-buttons__item {
   margin-right: 8px;
   .list-buttons > &:last-child {
     margin-right: 0;
+  }
+  @media (min-width: 480px) {
+    margin-bottom: 15px;
+    .list-buttons > &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+    .list-buttons > &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -24,8 +43,7 @@
   border: $color-accent;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $color-accent;
