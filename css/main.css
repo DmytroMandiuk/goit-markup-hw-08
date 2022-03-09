@@ -166,12 +166,17 @@ body.modal-open {
 
 .hero {
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/image/hero-img/hero480-min.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/hero-img/hero480-min.jpg);
+  background-image: linear-gradient to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/image/hero-img/hero480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding: 200px 0;
+}
+
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(/);
+  }
 }
 
 .hero-title {
@@ -723,22 +728,23 @@ body.modal-open {
   background-color: #fff;
 }
 
+.is-hidden .modal {
+  -webkit-transform: rotate(-90deg) scale(0.5);
+          transform: rotate(-90deg) scale(0.5);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     min-width: 450px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(0) scale(1);
-            transform: translate(-50%, -50%) rotate(0) scale(1);
-    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .is-hidden .modal {
-    -webkit-transform: rotate(-90deg) scale(0.5);
-            transform: rotate(-90deg) scale(0.5);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
