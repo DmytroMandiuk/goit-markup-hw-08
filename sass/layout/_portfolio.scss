@@ -4,6 +4,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .flex__item {
